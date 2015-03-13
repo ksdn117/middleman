@@ -8,6 +8,14 @@ RUN echo "<!DOCTYPE html> \
             <html lang="ja"> \
             <meta charset="utf-8"> \
             <title>Running!</title> \
+	    <style type="text/css"> \
+	    body { \
+	    width: 100%; \
+	    min-height: 100%; \
+	    background: linear-gradient(to bottom,#fff 0,#b8edff 50%,#83dfff 100%); \
+	    background-attachment: fixed; \
+	    } \
+	    </style> \
             </head> \
             <body> \
             <div align="center"> \
