@@ -1,8 +1,5 @@
-# ksdn117/test-page
-Show test page on nginx:latest Docker container
+# ksdn117/wakate-stage
+Use for https://github.com/wakate/wakate.github.io .
 
 ## How to
-`docker run -p 80:80 ksdn117/test-page`
-
-## Page sample
-<img alt="Sample image" src="https://github.com/ksdn117/test-page/blob/master/images/sample.png" />
+`docker run -p 80:3000  -e "BRANCH=master" ksdn117/wakate-stage`
