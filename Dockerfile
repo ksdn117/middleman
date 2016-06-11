@@ -1,14 +1,8 @@
 FROM starefossen/ruby-node:latest
 MAINTAINER	ksdn117 <ksdn117@gmail.com>
 
-ENV BRANCH source
+ADD start.sh /
 
-RUN git clone -b $BRANCH https://github.com/wakate/wakate.github.io/
-WORKDIR wakate.github.io
+EXPOSE 3000 80 4567 3001
 
-RUN bundle install
-RUN npm install
-
-EXPOSE 3000
-
-CMD ["middleman","server"]
+CMD ["sh", "/start.sh"]
