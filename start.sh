@@ -1,5 +1,12 @@
+#!/bin/bash
 git clone -b $BRANCH $REPO
-cd wakate.github.io
+SHORT=${REPO##*/}
+DIR=${SHORT%.*}
+cd $DIR
+
+export LC_ALL=C.UTF-8
+export LANG=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
 
 # gem install bundler
 bundle install
